@@ -85,7 +85,37 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
   const a = 1
   const b = 2
   ```
-  
+
+  - [2.2](#2.2) <a name='2.2'></a> If you must reassign references, use `let` instead of `var`. eslint: [`no-var`](http://eslint.org/docs/rules/no-var.html) jscs: [`disallowVar`](http://jscs.info/rule/disallowVar)
+
+    > Why? `let` is block-scoped rather than function-scoped like `var`.
+
+    ```javascript
+    // bad
+    var count = 1
+    if (true) {
+      count += 1
+    }
+
+    // good, use the let.
+    let count = 1
+    if (true) {
+      count += 1
+    }
+    ```
+
+  - [2.3](#2.3) <a name='2.3'></a> Note that both `let` and `const` are block-scoped.
+
+    ```javascript
+    // const and let only exist in the blocks they are defined in.
+    {
+      let a = 1
+      const b = 1
+    }
+    console.log(a) // ReferenceError
+    console.log(b) // ReferenceError
+    ```
+
 ## Objects
 
 ## Arrays
