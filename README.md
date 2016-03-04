@@ -445,10 +445,10 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
     ```javascript
     // bad
-    const name = "Capt. Janeway"
+    const name = "Malcolm Reynolds"
 
     // good
-    const name = 'Capt. Janeway'
+    const name = 'Malcolm Reynolds'
     ```
 
   - [6.2](#6.2) <a name='6.2'></a> Strings that cause the line to go over 100 characters should be written across multiple lines using string concatenation.
