@@ -1,5 +1,6 @@
 # migme JavaScript Style Guide
-migme's approach to JavaScript
+migme's approach to JavaScript.
+Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [Standard](https://github.com/feross/standard)
 
 ## Table of Contents
 
@@ -36,6 +37,38 @@ migme's approach to JavaScript
   1. [License](#license)
 
 ## Types
+
+  - [1.1](#1.1) <a name='1.1'></a> **Primitives**: When you access a primitive type you work directly on its value.
+
+    - `string`
+    - `number`
+    - `boolean`
+    - `null`
+    - `undefined`
+
+    ```javascript
+    const foo = 1
+    let bar = foo
+
+    bar = 42
+
+    console.log(foo, bar) // => 1, 42
+    ```
+
+  - [1.2](#1.2) <a name='1.2'></a> **Complex**: When you access a complex type you work on a reference to its value.
+
+    - `object`
+    - `array`
+    - `function`
+
+    ```javascript
+    const foo = [1, 2]
+    const bar = foo
+
+    bar[0] = 42
+
+    console.log(foo[0], bar[0]) // => 42, 42
+    ```
 
 ## References
 
