@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-migme",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "migme's ESLint config",
   "main": "index.js",
   "scripts": {
