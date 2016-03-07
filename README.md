@@ -207,7 +207,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
       value: 1,
 
       addValue (value) {
-        return atom.value + value;
+        return atom.value + value
       },
     }
     ```
@@ -352,7 +352,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
       const flatten = memo.concat(item)
       flat[index] = flatten
       return flatten
-    });
+    })
 
     // bad
     inbox.filter((msg) => {
@@ -538,7 +538,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     }
 
     // good
-    let test;
+    let test
     if (currentUser) {
       test = () => {
         console.log('Yup.')
@@ -786,7 +786,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     [1, 2, 3].map(x => {
       const y = x + 1
       return x * y
-    });
+    })
 
     // good
     [1, 2, 3].map((x) => {
@@ -869,11 +869,11 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     Jedi.prototype.jump = function () {
       this.jumping = true
       return true
-    };
+    }
 
     Jedi.prototype.setHeight = function (height) {
       this.height = height
-    };
+    }
 
     const luke = new Jedi()
     luke.jump() // => true
@@ -958,7 +958,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
     // ok
     import migmeStyleGuide from './migmeStyleGuide'
-    export default migmeStyleGuide.es6;
+    export default migmeStyleGuide.es6
 
     // best
     import { es6 } from './migmeStyleGuide'
@@ -1069,7 +1069,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
   - [13.2](#13.2) <a name='13.2'></a> Use one `const` declaration per variable. eslint: [`one-var`](http://eslint.org/docs/rules/one-var.html) jscs: [`disallowMultipleVarDecl`](http://jscs.info/rule/disallowMultipleVarDecl)
 
-    > Why? It's easier to add new variable declarations this way, and you never have to worry about swapping out a `;` for a `,` or introducing punctuation-only diffs.
+    > Why? It's easier to add new variable declarations this way, and you never have to worry about adding a `,` or introducing punctuation-only diffs.
 
     ```javascript
     // bad
@@ -1199,7 +1199,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
       var anonymous = function () {
         console.log('anonymous function expression')
-      };
+      }
     }
     ```
 
@@ -2077,7 +2077,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
       const self = this
       return function () {
         console.log(self)
-      };
+      }
     }
 
     // bad
@@ -2085,14 +2085,14 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
       const that = this
       return function () {
         console.log(that)
-      };
+      }
     }
 
     // good
     function foo () {
       return () => {
         console.log(this)
-      };
+      }
     }
     ```
 
@@ -2103,7 +2103,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     class CheckBox {
       // ...
     }
-    export default CheckBox;
+    export default CheckBox
 
     // in some other file
     // bad
@@ -2131,9 +2131,9 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     const MigmeStyleGuide = {
       es6: {
       }
-    };
+    }
 
-    export default MigmeStyleGuide;
+    export default MigmeStyleGuide
     ```
 
 ## Accessors
