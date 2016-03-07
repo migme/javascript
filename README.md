@@ -1909,6 +1909,28 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
 ## Semicolons
 
+  - [20.1](#20.1) <a name='20.1'></a> **Nope.** [It's](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding) [fine](http://inimino.org/~inimino/blog/javascript_semicolons). [Really!](https://www.youtube.com/watch?v=gsfbh17Ax9I). eslint: [`semi`](http://eslint.org/docs/rules/semi.html) jscs: [`requireSemicolons`](http://jscs.info/rule/requireSemicolons)
+
+    ```javascript
+    // bad
+    (function () {
+      const name = 'Skywalker';
+      return name;
+    })();
+
+    // good
+    (() => {
+      const name = 'Skywalker'
+      return name
+    }())
+
+    // Even without semicolons, they are still allowed to disambiguate statements beginning with [, (, /, +, or -:
+    ;(function () {
+      const name = 'Skywalker'
+      return name
+    }())
+    ```
+
 ## Type Casting & Coercion
 
 ## Naming Conventions
