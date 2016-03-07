@@ -2304,6 +2304,23 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
 ## Testing
 
+  - [28.1](#28.1) <a name="28.1"></a> **Yup.**
+
+    ```javascript
+    function foo () {
+      return true
+    }
+    ```
+
+  - [28.2](#28.2) <a name="28.2"></a> **No, but seriously**:
+   - Whichever testing framework you use, you should be writing tests!
+   - Strive to write many small pure functions, and minimize where mutations occur.
+   - Be cautious about stubs and mocks - they can make your tests more brittle.
+   - We primarily use [`mocha`](https://www.npmjs.com/package/mocha) at migme.
+   - 100% test coverage is a good goal to strive for, even if it's not always practical to reach it.
+   - We use [Codecov](https://codecov.io) to help analyse our test coverage.
+   - Whenever you fix a bug, _write a regression test_. A bug fixed without a regression test is almost certainly going to break again in the future.
+
 ## Performance
 
 ## Resources
