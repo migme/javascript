@@ -1,6 +1,6 @@
 {
   "name": "migme-style",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "migme's approach to JavaScript",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
