@@ -262,7 +262,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
   - [3.8](#3.8) <a name="3.8"></a> Only quote properties that are invalid identifiers. eslint: [`quote-props`](http://eslint.org/docs/rules/quote-props.html) jscs: [`disallowQuotedKeysInObjects`](http://jscs.info/rule/disallowQuotedKeysInObjects)
 
-  > Why? In general we consider it subjectively easier to read. It improves syntax highlighting, and is also more easily optimized by many JS engines.
+  > Why? In general we consider it subjectively easier to read. It improves syntax highlighting, and is also more easily optimised by many JS engines.
 
   ```javascript
   // bad
@@ -680,7 +680,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
   - [7.13](#7.13) <a name="7.13"></a> Never reassign parameters. eslint: [`no-param-reassign`](http://eslint.org/docs/rules/no-param-reassign.html)
 
-    > Why? Reassigning parameters can lead to unexpected behavior, especially when accessing the `arguments` object. It can also cause optimization issues, especially in V8.
+    > Why? Reassigning parameters can lead to unexpected behavior, especially when accessing the `arguments` object. It can also cause optimisation issues, especially in V8.
 
     ```javascript
     // bad
@@ -1290,7 +1290,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
   - [15.4](#15.4) <a name='15.4'></a> For more information see [Truth Equality and JavaScript](http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108) by Angus Croll.
   - [15.5](#15.5) <a name='15.5'></a> Use braces to create blocks in `case` and `default` clauses that contain lexical declarations (e.g. `let`, `const`, `function`, and `class`).
 
-  > Why? Lexical declarations are visible in the entire `switch` block but only get initialized when assigned, which only happens when its `case` is reached. This causes problems when multiple `case` clauses attempt to define the same thing.
+  > Why? Lexical declarations are visible in the entire `switch` block but only get initialised when assigned, which only happens when its `case` is reached. This causes problems when multiple `case` clauses attempt to define the same thing.
 
   eslint rules: [`no-case-declarations`](http://eslint.org/docs/rules/no-case-declarations.html).
 
@@ -1626,7 +1626,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     ```
 
   - [18.6](#18.6) <a name='18.6'></a> Use indentation when making long method chains (more than 2 method chains). Use a leading dot, which
-    emphasizes that the line is a method call, not a new statement. eslint: [`newline-per-chained-call`](http://eslint.org/docs/rules/newline-per-chained-call) [`no-whitespace-before-property`](http://eslint.org/docs/rules/no-whitespace-before-property)
+    emphasises that the line is a method call, not a new statement. eslint: [`newline-per-chained-call`](http://eslint.org/docs/rules/newline-per-chained-call) [`no-whitespace-before-property`](http://eslint.org/docs/rules/no-whitespace-before-property)
 
     ```javascript
     // bad
@@ -2314,7 +2314,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
   - [28.2](#28.2) <a name="28.2"></a> **No, but seriously**:
    - Whichever testing framework you use, you should be writing tests!
-   - Strive to write many small pure functions, and minimize where mutations occur.
+   - Strive to write many small pure functions, and minimise where mutations occur.
    - Be cautious about stubs and mocks - they can make your tests more brittle.
    - We primarily use [`mocha`](https://www.npmjs.com/package/mocha) at migme.
    - 100% test coverage is a good goal to strive for, even if it's not always practical to reach it.
