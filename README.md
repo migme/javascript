@@ -1909,7 +1909,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
 ## Semicolons
 
-  - [20.1](#20.1) <a name='20.1'></a> **Nope.** [It's](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding) [fine](http://inimino.org/~inimino/blog/javascript_semicolons). [Really!](https://www.youtube.com/watch?v=gsfbh17Ax9I). eslint: [`semi`](http://eslint.org/docs/rules/semi.html) jscs: [`requireSemicolons`](http://jscs.info/rule/requireSemicolons)
+  - [20.1](#20.1) <a name='20.1'></a> **Nope.** [It's](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding) [fine](http://inimino.org/~inimino/blog/javascript_semicolons). [Really!](https://www.youtube.com/watch?v=gsfbh17Ax9I). eslint: [`semi`](http://eslint.org/docs/rules/semi.html) jscs: [`disallowSemicolons`](http://jscs.info/rule/disallowSemicolons)
 
     ```javascript
     // bad
