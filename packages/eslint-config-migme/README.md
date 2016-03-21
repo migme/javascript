@@ -14,7 +14,7 @@ It requires `eslint`.
 1. `npm install --save-dev eslint-config-migme eslint-plugin-react eslint`
 2. add `"extends": "migme"` to your .eslintrc
 
-### eslint-config-migme/brace-style
+### eslint-config-migme/base
 
 Lints ES6+ but does not lint React.
 It requires `eslint`.
