@@ -11,8 +11,16 @@ This package provides migme's .eslintrc as an extensible shared config
 Our default export contains all of our ESLint rules, including EcmaScript 6+.
 It requires `eslint`.
 
-1. `npm install --save-dev eslint-config-migme eslint`
+1. `npm install --save-dev eslint-config-migme eslint-plugin-react eslint`
 2. add `"extends": "migme"` to your .eslintrc
+
+### eslint-config-migme/base
+
+Lints ES6+ but does not lint React.
+It requires `eslint`.
+
+1. `npm install --save-dev eslint-config-migme eslint`
+2. add `"extends": "migme/base"` to your .eslintrc
 
 ### eslint-config-migme/legacy
 
