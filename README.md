@@ -86,7 +86,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
   const b = 2
   ```
 
-  - [2.2](#2.2) <a name='2.2'></a> If you must reassign references, use `let` instead of `var`. eslint: [`no-var`](http://eslint.org/docs/rules/no-var.html) jscs: [`disallowVar`](http://jscs.info/rule/disallowVar)
+  - [2.2](#2.2) <a name='2.2'></a> If you must reassign references, use `let` instead of `var`. eslint: [`no-var`](http://eslint.org/docs/rules/no-var.html)
 
     > Why? `let` is block-scoped rather than function-scoped like `var`.
 
@@ -128,7 +128,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
   const item = {}
   ```
 
-  - [3.2](#3.2) <a name='3.2'></a> If your code will be executed in browsers in script context, don't use [reserved words](http://es5.github.io/#x7.6.1) as keys. It won't work in IE8. [More info](https://github.com/airbnb/javascript/issues/61). It’s OK to use them in ES6 modules and server-side code. jscs: [`disallowIdentifierNames`](http://jscs.info/rule/disallowIdentifierNames)
+  - [3.2](#3.2) <a name='3.2'></a> If your code will be executed in browsers in script context, don't use [reserved words](http://es5.github.io/#x7.6.1) as keys. It won't work in IE8. [More info](https://github.com/airbnb/javascript/issues/61). It’s OK to use them in ES6 modules and server-side code.
 
     ```javascript
     // bad
@@ -144,7 +144,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     }
     ```
 
-  - [3.3](#3.3) <a name='3.3'></a> Use readable synonyms in place of reserved words. jscs: [`disallowIdentifierNames`](http://jscs.info/rule/disallowIdentifierNames)
+  - [3.3](#3.3) <a name='3.3'></a> Use readable synonyms in place of reserved words.
 
     ```javascript
     // bad
@@ -190,7 +190,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     ```
 
   <a name="es6-object-shorthand"></a>
-  - [3.5](#3.5) <a name='3.5'></a> Use object method shorthand. eslint: [`object-shorthand`](http://eslint.org/docs/rules/object-shorthand.html) jscs: [`requireEnhancedObjectLiterals`](http://jscs.info/rule/requireEnhancedObjectLiterals)
+  - [3.5](#3.5) <a name='3.5'></a> Use object method shorthand. eslint: [`object-shorthand`](http://eslint.org/docs/rules/object-shorthand.html)
 
     ```javascript
     // bad
@@ -213,7 +213,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     ```
 
   <a name="es6-object-concise"></a>
-  - [3.6](#3.6) <a name='3.6'></a> Use property value shorthand. eslint: [`object-shorthand`](http://eslint.org/docs/rules/object-shorthand.html) jscs: [`requireEnhancedObjectLiterals`](http://jscs.info/rule/requireEnhancedObjectLiterals)
+  - [3.6](#3.6) <a name='3.6'></a> Use property value shorthand. eslint: [`object-shorthand`](http://eslint.org/docs/rules/object-shorthand.html)
 
     > Why? It is shorter to write and descriptive.
 
@@ -260,7 +260,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     }
     ```
 
-  - [3.8](#3.8) <a name="3.8"></a> Only quote properties that are invalid identifiers. eslint: [`quote-props`](http://eslint.org/docs/rules/quote-props.html) jscs: [`disallowQuotedKeysInObjects`](http://jscs.info/rule/disallowQuotedKeysInObjects)
+  - [3.8](#3.8) <a name="3.8"></a> Only quote properties that are invalid identifiers. eslint: [`quote-props`](http://eslint.org/docs/rules/quote-props.html)
 
   > Why? In general we consider it subjectively easier to read. It improves syntax highlighting, and is also more easily optimised by many JS engines.
 
@@ -377,7 +377,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
 ## Destructuring
 
-  - [5.1](#5.1) <a name='5.1'></a> Use object destructuring when accessing and using multiple properties of an object. jscs: [`requireObjectDestructuring`](http://jscs.info/rule/requireObjectDestructuring)
+  - [5.1](#5.1) <a name='5.1'></a> Use object destructuring when accessing and using multiple properties of an object.
 
     > Why? Destructuring saves you from creating temporary references for those properties.
 
@@ -402,7 +402,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     }
     ```
 
-  - [5.2](#5.2) <a name='5.2'></a> Use array destructuring. jscs: [`requireArrayDestructuring`](http://jscs.info/rule/requireArrayDestructuring)
+  - [5.2](#5.2) <a name='5.2'></a> Use array destructuring.
 
     ```javascript
     const arr = [1, 2, 3, 4]
@@ -441,7 +441,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
 ## Strings
 
-  - [6.1](#6.1) <a name='6.1'></a> Use single quotes `''` for strings. eslint: [`quotes`](http://eslint.org/docs/rules/quotes.html) jscs: [`validateQuoteMarks`](http://jscs.info/rule/validateQuoteMarks)
+  - [6.1](#6.1) <a name='6.1'></a> Use single quotes `''` for strings. eslint: [`quotes`](http://eslint.org/docs/rules/quotes.html)
 
     ```javascript
     // bad
@@ -471,7 +471,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     ```
 
   <a name="es6-template-literals"></a>
-  - [6.4](#6.4) <a name='6.4'></a> When programmatically building up strings, use template strings instead of concatenation. eslint: [`prefer-template`](http://eslint.org/docs/rules/prefer-template.html) [`template-curly-spacing`](http://eslint.org/docs/rules/template-curly-spacing) jscs: [`requireTemplateStrings`](http://jscs.info/rule/requireTemplateStrings)
+  - [6.4](#6.4) <a name='6.4'></a> When programmatically building up strings, use template strings instead of concatenation. eslint: [`prefer-template`](http://eslint.org/docs/rules/prefer-template.html) [`template-curly-spacing`](http://eslint.org/docs/rules/template-curly-spacing)
 
     > Why? Template strings give you a readable, concise syntax with proper newlines and string interpolation features.
 
@@ -500,7 +500,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
 ## Functions
 
-  - [7.1](#7.1) <a name='7.1'></a> Use function declarations instead of function expressions. jscs: [`requireFunctionDeclarations`](http://jscs.info/rule/requireFunctionDeclarations)
+  - [7.1](#7.1) <a name='7.1'></a> Use function declarations instead of function expressions.
 
     > Why? Function declarations are named, so they're easier to identify in call stacks. Also, the whole body of a function declaration is hoisted, whereas only the reference of a function expression is hoisted. This rule makes it possible to always use [Arrow Functions](#arrow-functions) in place of function expressions.
 
@@ -514,7 +514,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     }
     ```
 
-  - [7.2](#7.2) <a name='7.2'></a> Immediately invoked function expressions: eslint: [`wrap-iife`](http://eslint.org/docs/rules/wrap-iife.html) jscs: [`requireParenthesesAroundIIFE`](http://jscs.info/rule/requireParenthesesAroundIIFE)
+  - [7.2](#7.2) <a name='7.2'></a> Immediately invoked function expressions: eslint: [`wrap-iife`](http://eslint.org/docs/rules/wrap-iife.html)
 
     > Why? An immediately invoked function expression is a single unit - wrapping both it, and its invocation parens, in parens, cleanly expresses this. Note that in a world with modules everywhere, you almost never need an IIFE.
 
@@ -703,7 +703,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
 ## Arrow Functions
 
-  - [8.1](#8.1) <a name='8.1'></a> When you must use function expressions (as when passing an anonymous function), use arrow function notation. eslint: [`prefer-arrow-callback`](http://eslint.org/docs/rules/prefer-arrow-callback.html), [`arrow-spacing`](http://eslint.org/docs/rules/arrow-spacing.html) jscs: [`requireArrowFunctions`](http://jscs.info/rule/requireArrowFunctions)
+  - [8.1](#8.1) <a name='8.1'></a> When you must use function expressions (as when passing an anonymous function), use arrow function notation. eslint: [`prefer-arrow-callback`](http://eslint.org/docs/rules/prefer-arrow-callback.html), [`arrow-spacing`](http://eslint.org/docs/rules/arrow-spacing.html)
 
     > Why? It creates a version of the function that executes in the context of `this`, which is usually what you want, and is a more concise syntax.
 
@@ -723,7 +723,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     })
     ```
 
-  - [8.2](#8.2) <a name='8.2'></a> If the function body consists of a single expression, omit the braces and use the implicit return. Otherwise, keep the braces and use a `return` statement. eslint: [`arrow-parens`](http://eslint.org/docs/rules/arrow-parens.html), [`arrow-body-style`](http://eslint.org/docs/rules/arrow-body-style.html) jscs:  [`disallowParenthesesAroundArrowParam`](http://jscs.info/rule/disallowParenthesesAroundArrowParam), [`requireShorthandArrowFunctions`](http://jscs.info/rule/requireShorthandArrowFunctions)
+  - [8.2](#8.2) <a name='8.2'></a> If the function body consists of a single expression, omit the braces and use the implicit return. Otherwise, keep the braces and use a `return` statement. eslint: [`arrow-parens`](http://eslint.org/docs/rules/arrow-parens.html), [`arrow-body-style`](http://eslint.org/docs/rules/arrow-body-style.html)
 
     > Why? Syntactic sugar. It reads well when multiple functions are chained together.
 
@@ -765,7 +765,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     ```
 
 
-  - [8.4](#8.4) <a name='8.4'></a> If your function takes a single argument and doesn’t use braces, omit the parentheses. Otherwise, always include parentheses around arguments. eslint: [`arrow-parens`](http://eslint.org/docs/rules/arrow-parens.html) jscs:  [`disallowParenthesesAroundArrowParam`](http://jscs.info/rule/disallowParenthesesAroundArrowParam)
+  - [8.4](#8.4) <a name='8.4'></a> If your function takes a single argument and doesn’t use braces, omit the parentheses. Otherwise, always include parentheses around arguments. eslint: [`arrow-parens`](http://eslint.org/docs/rules/arrow-parens.html)
 
     > Why? Less visual clutter.
 
@@ -1025,7 +1025,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
 ## Properties
 
-  - [12.1](#12.1) <a name='12.1'></a> Use dot notation when accessing properties. eslint: [`dot-notation`](http://eslint.org/docs/rules/dot-notation.html) jscs: [`requireDotNotation`](http://jscs.info/rule/requireDotNotation)
+  - [12.1](#12.1) <a name='12.1'></a> Use dot notation when accessing properties. eslint: [`dot-notation`](http://eslint.org/docs/rules/dot-notation.html)
 
     ```javascript
     const luke = {
@@ -1067,7 +1067,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     const superPower = new SuperPower()
     ```
 
-  - [13.2](#13.2) <a name='13.2'></a> Use one `const` declaration per variable. eslint: [`one-var`](http://eslint.org/docs/rules/one-var.html) jscs: [`disallowMultipleVarDecl`](http://jscs.info/rule/disallowMultipleVarDecl)
+  - [13.2](#13.2) <a name='13.2'></a> Use one `const` declaration per variable. eslint: [`one-var`](http://eslint.org/docs/rules/one-var.html)
 
     > Why? It's easier to add new variable declarations this way, and you never have to worry about adding a `,` or introducing punctuation-only diffs.
 
@@ -1399,7 +1399,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     ```
 
   - [16.2](#16.2) <a name='16.2'></a> If you're using multi-line blocks with `if` and `else`, put `else` on the same line as your
-    `if` block's closing brace. eslint: [`brace-style`](http://eslint.org/docs/rules/brace-style.html) jscs:  [`disallowNewlineBeforeBlockStatements`](http://jscs.info/rule/disallowNewlineBeforeBlockStatements)
+    `if` block's closing brace. eslint: [`brace-style`](http://eslint.org/docs/rules/brace-style.html)
 
     ```javascript
     // bad
@@ -1522,7 +1522,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
 ## Whitespace
 
-  - [18.1](#18.1) <a name='18.1'></a> Use soft tabs set to 2 spaces. eslint: [`indent`](http://eslint.org/docs/rules/indent.html) jscs: [`validateIndentation`](http://jscs.info/rule/validateIndentation)
+  - [18.1](#18.1) <a name='18.1'></a> Use soft tabs set to 2 spaces. eslint: [`indent`](http://eslint.org/docs/rules/indent.html)
 
     ```javascript
     // bad
@@ -1541,7 +1541,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     }
     ```
 
-  - [18.2](#18.2) <a name='18.2'></a> Place 1 space before the leading brace. eslint: [`space-before-blocks`](http://eslint.org/docs/rules/space-before-blocks.html) jscs: [`requireSpaceBeforeBlockStatements`](http://jscs.info/rule/requireSpaceBeforeBlockStatements)
+  - [18.2](#18.2) <a name='18.2'></a> Place 1 space before the leading brace. eslint: [`space-before-blocks`](http://eslint.org/docs/rules/space-before-blocks.html)
 
     ```javascript
     // bad
@@ -1567,7 +1567,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     })
     ```
 
-  - [18.3](#18.3) <a name='18.3'></a> Place 1 space before the opening parenthesis in control statements and function declarations (`if`, `while`, `function`, etc.). Place no space between the function name and argument list in function calls. eslint: [`keyword-spacing`](http://eslint.org/docs/rules/keyword-spacing.html) jscs:  [`requireSpaceAfterKeywords`](http://jscs.info/rule/requireSpaceAfterKeywords)
+  - [18.3](#18.3) <a name='18.3'></a> Place 1 space before the opening parenthesis in control statements and function declarations (`if`, `while`, `function`, etc.). Place no space between the function name and argument list in function calls. eslint: [`keyword-spacing`](http://eslint.org/docs/rules/keyword-spacing.html)
 
     ```javascript
     // bad
@@ -1591,7 +1591,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     }
     ```
 
-  - [18.4](#18.4) <a name='18.4'></a> Set off operators with spaces. eslint: [`space-infix-ops`](http://eslint.org/docs/rules/space-infix-ops.html) jscs: [`requireSpaceBeforeBinaryOperators`](http://jscs.info/rule/requireSpaceBeforeBinaryOperators), [`requireSpaceAfterBinaryOperators`](http://jscs.info/rule/requireSpaceAfterBinaryOperators)
+  - [18.4](#18.4) <a name='18.4'></a> Set off operators with spaces. eslint: [`space-infix-ops`](http://eslint.org/docs/rules/space-infix-ops.html)
 
     ```javascript
     // bad
@@ -1668,7 +1668,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     const leds = stage.selectAll('.led').data(data)
     ```
 
-  - [18.7](#18.7) <a name='18.7'></a> Leave a blank line after blocks and before the next statement. jscs: [`requirePaddingNewLinesAfterBlocks`](http://jscs.info/rule/requirePaddingNewLinesAfterBlocks)
+  - [18.7](#18.7) <a name='18.7'></a> Leave a blank line after blocks and before the next statement.
 
     ```javascript
     // bad
@@ -1725,7 +1725,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     return arr
     ```
 
-  - [18.8](#18.8) <a name='18.8'></a> Do not pad your blocks with blank lines. eslint: [`padded-blocks`](http://eslint.org/docs/rules/padded-blocks.html) jscs:  [`disallowPaddingNewlinesInBlocks`](http://jscs.info/rule/disallowPaddingNewlinesInBlocks)
+  - [18.8](#18.8) <a name='18.8'></a> Do not pad your blocks with blank lines. eslint: [`padded-blocks`](http://eslint.org/docs/rules/padded-blocks.html)
 
     ```javascript
     // bad
@@ -1757,7 +1757,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     }
     ```
 
-  - [18.9](#18.9) <a name='18.9'></a> Do not add spaces inside parentheses. eslint: [`space-in-parens`](http://eslint.org/docs/rules/space-in-parens.html) jscs: [`disallowSpacesInsideParentheses`](http://jscs.info/rule/disallowSpacesInsideParentheses)
+  - [18.9](#18.9) <a name='18.9'></a> Do not add spaces inside parentheses. eslint: [`space-in-parens`](http://eslint.org/docs/rules/space-in-parens.html)
 
     ```javascript
     // bad
@@ -1781,7 +1781,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     }
     ```
 
-  - [18.10](#18.10) <a name='18.10'></a> Do not add spaces inside brackets. eslint: [`array-bracket-spacing`](http://eslint.org/docs/rules/array-bracket-spacing.html) jscs: [`disallowSpacesInsideArrayBrackets`](http://jscs.info/rule/disallowSpacesInsideArrayBrackets)
+  - [18.10](#18.10) <a name='18.10'></a> Do not add spaces inside brackets. eslint: [`array-bracket-spacing`](http://eslint.org/docs/rules/array-bracket-spacing.html)
 
     ```javascript
     // bad
@@ -1793,7 +1793,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     console.log(foo[0])
     ```
 
-  - [18.11](#18.11) <a name='18.11'></a> Add spaces inside curly braces. eslint: [`object-curly-spacing`](http://eslint.org/docs/rules/object-curly-spacing.html) jscs: [`requireSpacesInsideObjectBrackets`](http://jscs.info/rule/requireSpacesInsideObjectBrackets)
+  - [18.11](#18.11) <a name='18.11'></a> Add spaces inside curly braces. eslint: [`object-curly-spacing`](http://eslint.org/docs/rules/object-curly-spacing.html)
 
     ```javascript
     // bad
@@ -1803,7 +1803,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     const foo = { clark: 'kent' }
     ```
 
-  - [18.12](#18.12) <a name='18.12'></a> Avoid having lines of code that are longer than 100 characters (including whitespace). eslint: [`max-len`](http://eslint.org/docs/rules/max-len.html) jscs: [`maximumLineLength`](http://jscs.info/rule/maximumLineLength)
+  - [18.12](#18.12) <a name='18.12'></a> Avoid having lines of code that are longer than 100 characters (including whitespace). eslint: [`max-len`](http://eslint.org/docs/rules/max-len.html)
 
     > Why? This ensures readability and maintainability.
 
@@ -1830,7 +1830,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
 ## Commas
 
-  - [19.1](#19.1) <a name='19.1'></a> Leading commas: **Nope.** eslint: [`comma-style`](http://eslint.org/docs/rules/comma-style.html) jscs: [`requireCommaBeforeLineBreak`](http://jscs.info/rule/requireCommaBeforeLineBreak)
+  - [19.1](#19.1) <a name='19.1'></a> Leading commas: **Nope.** eslint: [`comma-style`](http://eslint.org/docs/rules/comma-style.html)
 
     ```javascript
     // bad
@@ -1864,7 +1864,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     }
     ```
 
-  - [19.2](#19.2) <a name='19.2'></a> Additional trailing comma: **Yup.** eslint: [`comma-dangle`](http://eslint.org/docs/rules/comma-dangle.html) jscs: [`requireTrailingComma`](http://jscs.info/rule/requireTrailingComma)
+  - [19.2](#19.2) <a name='19.2'></a> Additional trailing comma: **Yup.** eslint: [`comma-dangle`](http://eslint.org/docs/rules/comma-dangle.html)
 
     > Why? This leads to cleaner git diffs. Also, transpilers like Babel will remove the additional trailing comma in the transpiled code which means you don't have to worry about the trailing comma problem in legacy browsers.
 
@@ -1909,7 +1909,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
 ## Semicolons
 
-  - [20.1](#20.1) <a name='20.1'></a> **Nope.** [It's](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding) [fine](http://inimino.org/~inimino/blog/javascript_semicolons). [Really!](https://www.youtube.com/watch?v=gsfbh17Ax9I). eslint: [`semi`](http://eslint.org/docs/rules/semi.html) jscs: [`disallowSemicolons`](http://jscs.info/rule/disallowSemicolons)
+  - [20.1](#20.1) <a name='20.1'></a> **Nope.** [It's](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding) [fine](http://inimino.org/~inimino/blog/javascript_semicolons). [Really!](https://www.youtube.com/watch?v=gsfbh17Ax9I). eslint: [`semi`](http://eslint.org/docs/rules/semi.html)
 
     ```javascript
     // bad
@@ -2021,7 +2021,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     }
     ```
 
-  - [22.2](#22.2) <a name='22.2'></a> Use camelCase when naming objects, functions, and instances. eslint: [`camelcase`](http://eslint.org/docs/rules/camelcase.html) jscs: [`requireCamelCaseOrUpperCaseIdentifiers`](http://jscs.info/rule/requireCamelCaseOrUpperCaseIdentifiers)
+  - [22.2](#22.2) <a name='22.2'></a> Use camelCase when naming objects, functions, and instances. eslint: [`camelcase`](http://eslint.org/docs/rules/camelcase.html)
 
     ```javascript
     // bad
@@ -2034,7 +2034,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     function thisIsMyFunction () {}
     ```
 
-  - [22.3](#22.3) <a name='22.3'></a> Use PascalCase when naming constructors or classes. eslint: [`new-cap`](http://eslint.org/docs/rules/new-cap.html) jscs: [`requireCapitalizedConstructors`](http://jscs.info/rule/requireCapitalizedConstructors)
+  - [22.3](#22.3) <a name='22.3'></a> Use PascalCase when naming constructors or classes. eslint: [`new-cap`](http://eslint.org/docs/rules/new-cap.html)
 
     ```javascript
     // bad
@@ -2058,7 +2058,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     })
     ```
 
-  - [22.4](#22.4) <a name='22.4'></a> Use a leading underscore `_` when naming private properties. eslint: [`no-underscore-dangle`](http://eslint.org/docs/rules/no-underscore-dangle.html) jscs: [`disallowDanglingUnderscores`](http://jscs.info/rule/disallowDanglingUnderscores)
+  - [22.4](#22.4) <a name='22.4'></a> Use a leading underscore `_` when naming private properties. eslint: [`no-underscore-dangle`](http://eslint.org/docs/rules/no-underscore-dangle.html)
 
     ```javascript
     // bad
@@ -2069,7 +2069,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
     this._firstName = 'Panda'
     ```
 
-  - [22.5](#22.5) <a name='22.5'></a> Don't save references to `this`. Use arrow functions or Function#bind. jscs: [`disallowNodeTypes`](http://jscs.info/rule/disallowNodeTypes)
+  - [22.5](#22.5) <a name='22.5'></a> Don't save references to `this`. Use arrow functions or Function#bind.
 
     ```javascript
     // bad
@@ -2218,7 +2218,7 @@ Semi-based on [Airbnb's Style Guide](https://github.com/airbnb/javascript) and [
 
 ## jQuery
 
-  - [25.1](#25.1) <a name='25.1'></a> Prefix jQuery object variables with a `$`. jscs: [`requireDollarBeforejQueryAssignment`](http://jscs.info/rule/requireDollarBeforejQueryAssignment)
+  - [25.1](#25.1) <a name='25.1'></a> Prefix jQuery object variables with a `$`.
 
     > Why? It's a lot easier to read the code and determine which variables are assigned to jQuery objects.
 
