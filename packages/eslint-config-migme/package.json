@@ -4,7 +4,7 @@
   "description": "migme's ESLint config",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint . --config base.js",
     "test": "npm run lint"
   },
   "repository": {
@@ -26,9 +26,9 @@
   },
   "homepage": "https://github.com/migme/javascript#readme",
   "devDependencies": {
-    "eslint": "^2.2.0"
+    "eslint": "^3.0.0"
   },
   "peerDependencies": {
-    "eslint": "^2.2.0"
+    "eslint": "^3.0.0"
   }
 }
