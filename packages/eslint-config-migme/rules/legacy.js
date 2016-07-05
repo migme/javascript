@@ -1,5 +1,5 @@
 module.exports = {
-	rules: {
-		'comma-dangle': [2, 'never']
-	}
+  rules: {
+    'comma-dangle': [2, 'never'],
+  },
 }
