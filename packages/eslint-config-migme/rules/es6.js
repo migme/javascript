@@ -25,7 +25,9 @@ module.exports = {
       after: true,
     }],
     'no-class-assign': 2,
-    'no-confusing-arrow': 2,
+    'no-confusing-arrow': [2, {
+      allowParens: true
+    }],
     'no-const-assign': 2,
     'no-dupe-class-members': 2,
     'no-duplicate-imports': 2,
