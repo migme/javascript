@@ -34,7 +34,7 @@ module.exports = {
       shorthandFirst: true,
     }],
     'react/jsx-space-before-closing': [2, 'always'],
-    'react/jsx-uses-react': [2, { pragma: 'React' }],
+    'react/jsx-uses-react': 2,
     'react/jsx-uses-vars': 2,
     'react/no-danger': 0,
     'react/no-deprecated': [1, { react: '0.14.0' }],
