@@ -37,9 +37,9 @@ module.exports = {
     'react/jsx-uses-react': 2,
     'react/jsx-uses-vars': 2,
     'react/no-danger': 0,
-    'react/no-deprecated': [1, { react: '0.14.0' }],
-    'react/no-did-mount-set-state': [2, 'allow-in-func'],
-    'react/no-did-update-set-state': [2, 'allow-in-func'],
+    'react/no-deprecated': 1,
+    'react/no-did-mount-set-state': 2,
+    'react/no-did-update-set-state': 2,
     'react/no-direct-mutation-state': 0,
     'react/no-is-mounted': 2,
     'react/no-multi-comp': [2, { ignoreStateless: true }],
@@ -71,7 +71,7 @@ module.exports = {
       callbacksLast: true,
       requiredFirst: true,
     }],
-    'react/wrap-multilines': [2, {
+    'react/jsx-wrap-multilines': [2, {
       declaration: true,
       assignment: true,
       return: true,
